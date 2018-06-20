@@ -4,6 +4,7 @@ x-collection-name: Product Hunt
 x-complete: 1
 info:
   title: Product Hunt
+  description: the-api-for-product-hunt-
   version: 1.0.0
 host: api.producthunt.com
 basePath: /v1
@@ -16,9 +17,9 @@ consumes:
 paths:
   /users/{username}:
     get:
-      summary: Get Users
-      description: Get users.
-      operationId: getUsersUsername
+      summary: Users
+      description: Get Users
+      operationId: users.username.get
       x-api-path-slug: usersusername-get
       parameters:
       - in: path
@@ -30,9 +31,9 @@ paths:
       - Users
   /categories/{category}/posts:
     get:
-      summary: Get Categories
-      description: Get categories.
-      operationId: getCategoriesCategoryAdds
+      summary: Posts
+      description: Get posts by category.
+      operationId: categories.category.posts.get
       x-api-path-slug: categoriescategoryposts-get
       parameters:
       - in: path
@@ -43,5 +44,7 @@ paths:
         200:
           description: OK
       tags:
-      - Categories
+      - Posts
+      - Products
+      - Services
 ---

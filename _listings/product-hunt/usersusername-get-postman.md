@@ -1,8 +1,8 @@
 {
   "info": {
-    "name": "Product Hunt Get Users",
-    "_postman_id": "d1809886-c453-4509-92b5-c8443fb3a883",
-    "description": "Get users.",
+    "name": "Product Hunt Users",
+    "_postman_id": "80a235b3-f58b-4383-81aa-00bb75015c71",
+    "description": "Get Users",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -10,8 +10,8 @@
       "name": "Users",
       "item": [
         {
-          "id": "6b44a6f6-d7ad-4156-a2a3-f5063662c825",
-          "name": "getUsersUsername",
+          "id": "7aa12fb9-c89b-424b-bde7-93effd7d48d2",
+          "name": "users.username.get",
           "request": {
             "url": {
               "protocol": "http",
@@ -32,14 +32,14 @@
             "body": {
               "mode": "raw"
             },
-            "description": "Get users."
+            "description": "Get Users"
           },
           "response": [
             {
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "f539910e-7798-4d4d-82fc-ce58da62026f"
+              "id": "0103522d-fb20-4874-be35-01d96ad2b997"
             }
           ]
         }
