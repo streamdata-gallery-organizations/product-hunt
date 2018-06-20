@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: Product Hunt
 x-complete: 0
 info:
-  title: Product Hunt Users
-  description: Get Users
+  title: Product Hunt Get Users
   version: 1.0.0
+  description: Get users.
 host: api.producthunt.com
 basePath: /v1
 schemes:
@@ -17,9 +17,9 @@ consumes:
 paths:
   /users/{username}:
     get:
-      summary: Users
-      description: Get Users
-      operationId: users.username.get
+      summary: Get Users
+      description: Get users.
+      operationId: getUsersUsername
       x-api-path-slug: usersusername-get
       parameters:
       - in: path
