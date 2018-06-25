@@ -1,17 +1,56 @@
 {
   "info": {
-    "name": "Product Hunt Get Categories",
-    "_postman_id": "13c86241-b6bb-4749-8503-4711b4120120",
-    "description": "Get categories.",
+    "name": "Product Hunt Posts",
+    "_postman_id": "f16f2c4e-892a-4260-bb3d-ce9835d0e2a4",
+    "description": "Get posts by category.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
     {
-      "name": "Categories",
+      "name": "Users",
       "item": [
         {
-          "id": "b48f2c40-d301-44ad-b5a2-483c372e38e6",
-          "name": "getCategoriesCategoryAdds",
+          "id": "ed6b734f-4874-410e-a353-2804658b818d",
+          "name": "users.username.get",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "api.producthunt.com",
+              "path": [
+                "v1",
+                "users/:username"
+              ],
+              "variable": [
+                {
+                  "id": "username",
+                  "value": "{}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {
+              "mode": "raw"
+            },
+            "description": "Get Users"
+          },
+          "response": [
+            {
+              "status": "OK",
+              "code": 200,
+              "name": "Response_200",
+              "id": "0e3326d5-ea41-4fe2-90e2-c0e521b8c86c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Posts",
+      "item": [
+        {
+          "id": "bf5d36aa-7535-4fcf-a2aa-e94540793d51",
+          "name": "categories.category.posts.get",
           "request": {
             "url": {
               "protocol": "http",
@@ -39,14 +78,14 @@
             "body": {
               "mode": "raw"
             },
-            "description": "Get categories."
+            "description": "Get posts by category."
           },
           "response": [
             {
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "87be8a5a-a7c2-4398-925d-f16c31f12e81"
+              "id": "030567fd-1dbf-448e-8b44-6b9658960d50"
             }
           ]
         }
