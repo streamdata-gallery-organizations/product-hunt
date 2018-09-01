@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Product Hunt",
+	"description": "This is a repository of product hunt APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/product-hunt.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-31",
+	"url": "http://product-hunt.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Product Hunt",
+			"x-api-slug": "product-hunt",
+			"description": "Product Hunt is a curation of the best new products, every day. Discover the latest mobile apps, websites, and technology products that everyones talking about.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11269-product-hunt.jpg",
+			"humanURL": "http://producthunt.com",
+			"baseURL": "https://api.producthunt.com//v1",
+			"tags": "Product Hunt",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/product-hunt/master/_listings/product-hunt/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Product Hunt",
+	"include": [
+		{
+			"name": "Product Hunt",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/product-hunt/master/_listings/product-hunt/apis.yaml"
+		}
+	]
+}
